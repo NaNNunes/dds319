@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Position</title>
+    <style>
+        #father{
+            width: 250px;
+            height: 250px;
+            background-color: #ccc;
+            position: relative;
+        }
+
+        .relativepos{
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+        .absolutepos{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 150px;
+            height: 150px;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="father">
+        <div class="blue relativepos">01</div>
+        <div class="red absolutepos">02</div>
+    </div>
+</body>
+</html>

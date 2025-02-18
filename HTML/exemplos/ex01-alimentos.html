@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods</title>
+    <style>
+
+        /*seletor{
+            propriedade
+        }*/
+
+        table, th, td, tr{
+            border: 1px solid green;
+            text-align: center;
+            padding: 2px;
+        }
+        td{
+            margin: 2px;
+            padding: 2px;
+        }
+        .title{
+            color: black;
+            background-color: green;
+        }
+        .st{
+            color: black;
+            background-color: rgb(190, 0, 0);
+        }
+        .nd{
+            background-color: greenyellow;
+        }
+        .tfoot{
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead class = "title">
+            <th>Fruits</th>
+            <th>Vegetables</th>
+            <th>Grins</th>
+            <th>...</th>
+        </thead>
+        
+        <tbody>
+            <tr class="st">
+                <td>Apple</td>
+                <td>Lettuce</td>
+                <td>Rice</td>
+                <td class="lines" rowspan="3">3 Lines</td>
+            </tr>
+
+            <tr class="nd">
+                <td >Orange</td>
+                <td >Beet</td>
+                <td >Wheat</td>
+            </tr>
+
+            <tr class="tfoot">
+                <td colspan="3">3 columns</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

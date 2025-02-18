@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS classes</title>
+
+    <style>
+        h1, h2{ /*its possible to use more selectors by separating them with comma*/
+            color: tomato;
+        }
+
+        #yellow{
+            color: black; /*color represents the font color*/
+            font-weight: bold;
+            font-size: 5vw;
+        }
+
+        .roxo{  /*the class is represented by a dot(.) before name*/
+                /* overlap generical selectors*/
+            background-color:yellowgreen;
+            width: 20vw;
+        }
+
+        .red{
+            color: yellow;
+            background-color: black;
+            width: 122px;
+        }
+
+        .blue{
+            color: cyan;
+            background-color: red;
+            width: 200px;
+        }
+
+        .green{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi</h1>
+    <h2>Hello</h2>
+
+    <p class="red"><span style="color:rgb(196, 255, 206)">Red</span> Hello World</p> <!-- css inline overlap the classes and ids-->
+    <p class="red">Red Hello World 2</p>
+
+    <p class="blue"> Blue Hello World</p>
+    <p class="blue"> Blue Hello World 2</p>
+    
+    <p class="green">Green Hello World </p>
+    <p class="green">Green Hello World 2</p>
+    
+    <p id="yellow" class="roxo" style="text-align: center;"> Caution</p>
+
+    <p class="red green">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi reiciendis voluptate eveniet ipsam officiis vero consequuntur nostrum voluptatum molestiae assumenda eaque, adipisci non iste sequi quia temporibus illum quos delectus.</p><!-- Its possible to use more classes by separating them with space-->
+
+</body>
+</html>

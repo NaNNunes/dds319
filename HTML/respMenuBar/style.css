@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{ /*set nav bar as a flex conteiner to sort itens*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    margin: 0 1rem;
+}
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*resposivity*/
+@media (max-width: 768px){ /*Adjust the layout to small devices, becomming menu vertical and allowing it to be displayed only when the menu icon is clicked*/
+    .menu-toggle{ /*Hide the menu button on large screens and show on screens small */
+        display: block; /*show menu button*/
+    }
+    .nav-list{ /*set a flexible, horizontal list on large screens, but hide it on screens small until actived*/
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-list.active{
+        display: flex; /*show menu after click icone*/
+    }
+}

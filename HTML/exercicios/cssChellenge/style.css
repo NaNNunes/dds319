@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: aquamarine;
+}
+
+main{
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.navbar{
+    display: block;
+    position: fixed;
+    justify-content: space-between;
+    background-color: beige;
+    margin: auto;
+    width: 100vw;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    margin: 1rem;
+    padding: 0 1rem;
+}
+.nav-list li a{
+    text-decoration: none;
+}
+
+
+#img-content{
+    display: block;
+    margin-top: 100px;
+    justify-items: center;
+}
+#img-content img{
+    width: 30vw;
+}

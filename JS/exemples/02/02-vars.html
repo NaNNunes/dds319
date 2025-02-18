@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vars</title>
+</head>
+<body>
+    <script>
+        var nome = "Renan";
+        var dtNasc = "03/09/2004";
+        console.log(`Olá ${nome} você nasceu em ${dtNasc}!`);
+        var dayOfTheWeek = 'monday';
+        console.log(dayOfTheWeek);
+        dayOfTheWeek = 1;
+        console.log(dayOfTheWeek);
+
+
+        let variavel = 1; // number
+        console.log(typeof variavel);
+        variavel = "1"; // str
+        console.log(typeof variavel);
+        variavel = true; // boolean
+        console.log(typeof variavel);
+
+        variavel = function(){} ;// anonimmous function
+        console.log(typeof variavel);
+
+        variavel = [1,2,3,4,5] // array (object)
+        console.log(typeof variavel);
+
+        nome = prompt("Digite seu nome: ");
+        alert(`Olá ${nome}!`);
+
+        let currentYear = 2025;
+        let birthYear = prompt("Enter your birth year:");
+        let year = currentYear - birthYear;
+        alert(`You are ${year} years old`);
+
+        let a  = prompt("Enter a number: ");
+        let b  = prompt("Enter another number: ");
+        if(a > b){
+            alert(`${a} > ${b}`);
+        }else if(a < b){
+            alert(`${a} < ${b}`);
+        } else{
+            alert(`${a} = ${b}`);
+        }
+
+        a  = prompt("Enter a number: ");
+        b  = prompt("Enter another number: ");
+        let res = "";
+        let notres = "";
+        if((a > 1) && (a < 6)){
+           res = "Maior que 1 e menor que 6"; 
+        }
+        if((a > 1) || (a < 6)){
+            res = "Maior que 1 ou menor que 6"
+        }
+        if(!((a>1) || (a < 6))){
+            notres = ("não é maior que 1 ou menor que 6");
+            alert(notres);
+        }
+
+        alert(res);
+
+    </script>
+</body>
+</html>
