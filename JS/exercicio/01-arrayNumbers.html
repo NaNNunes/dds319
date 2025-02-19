@@ -8,22 +8,20 @@
 <body>
     <script>
         let arr = [0,1,2,3,4,5,6,7,8,9,10];
-        let lastNum;
-        for (i = 0; i < 10; i++) {
+        document.write(`${arr} </br>`)
+
+        for (let i = 0; i < 10; i++) {
             if(arr[i] % 2 == 0){
-                lastNum = arr.pop();
-                arr.push(lastNum+1);
-                document.write(`${arr} </br>`)
+                arr.push(arr.length);
             }
             else{
-                arr.splice(i,1);
-                document.write(`${arr} </br>`)
+                arr.splice(i, 1);
             }
+
+            document.write(`${arr} </br>`)
         }
 
-        array.forEach(function(number) {
-            document.write(`${arr} </br>`)
-        });
+    
     </script>
 </body>
 </html>
