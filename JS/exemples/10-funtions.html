@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = 'Karol';
+        function showName(name){
+            document.write(`${name} </br>`);
+        }
+
+        showName(name);
+
+        let year = 2004;
+        let showYear = (year) => { //arrow function
+            document.write(`${year} </br>`);
+        };
+        showYear(year);
+
+        let soma = (a,b) =>{
+            return a+b;
+        }
+
+        let result = soma(15,10);
+        document.write(`${result} </br>`);
+
+        let person = {
+            nome: 'Julia',
+            idade: 19
+        }
+
+        let changeName = (personObject)=>{
+            personObject.nome = 'Lara',
+            personObject.township = 'Viana'
+        }
+
+        changeName(person);
+        console.log(per)
+    </script>
+</body>
+</html>

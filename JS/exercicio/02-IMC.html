@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>BMI Calculator</h1>
+    <label for="">Weight</label><input type="number" name="weight" id="txtweight">
+    <label for="">Height</label><input type="number" name="height" id="txtheight">
+
+    <script>
+        let w = Number.parseFloat(prompt("Enter your weight: "));
+        let h = Number.parseFloat(prompt("Enter your height: "));
+        let imc = w /((h*h)/10000);
+        let result = "";
+
+        if(imc < 18.5){
+            result = "abaixo do normal";
+        }
+        else if(imc < 25){
+            result = "normal";
+        }
+        else if(imc < 30){
+            result = "sobrepeso";
+        }
+        else if(imc < 35){
+            result = "Obesidade I";
+        }
+        else if(imc < 40){
+            result = "Obesidade II";
+        }
+        else{
+            result = "Obesidade III";
+        }
+
+        document.write('IMC: '+imc+'<br>');
+        document.write(`Status: ${result}`);
+        
+
+    </script>
+</body>
+</html>
