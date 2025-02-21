@@ -7,21 +7,25 @@
 </head>
 <body>
     <script>
-        let arr = [0,1,2,3,4,5,6,7,8,9,10];
-        document.write(`${arr} </br>`)
 
-        for (let i = 0; i < 10; i++) {
-            if(arr[i] % 2 == 0){
-                arr.push(arr.length);
-            }
-            else{
-                arr.splice(i, 1);
+        let arr = [0,1,2,3,4,5,6,7,8,9];
+        val = arr.length;
+
+        
+        for (i = 0; i < 10; i++) {
+            num = arr[i];
+
+            if(num % 2 == 0){
+                len =  arr.length;
+                arr.push(len++);
+
+            } else if(num % 2 != 0 && num != null) {
+                arr.splice(arr.indexOf(num), 1);
             }
 
-            document.write(`${arr} </br>`)
+            document.write(`${arr} </br></br>`);
         }
 
-    
     </script>
 </body>
 </html>
