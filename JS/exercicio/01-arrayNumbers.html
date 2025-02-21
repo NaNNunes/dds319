@@ -7,23 +7,23 @@
 </head>
 <body>
     <script>
-        let arr = [0,1,2,3,4,5,6,7,8,9,10];
-        let lastNum;
-        for (i = 0; i < 10; i++) {
-            if(arr[i] % 2 == 0){
-                lastNum = arr.pop();
-                arr.push(lastNum+1);
-                document.write(`${arr} </br>`)
-            }
-            else{
-                arr.splice(i,1);
-                document.write(`${arr} </br>`)
-            }
-        }
+        let arr = [0,1,2,3,4,5,6,7,8,9];
+        val = arr.length;
 
-        array.forEach(function(number) {
-            document.write(`${arr} </br>`)
-        });
+        
+        for (i = 0; i < 10; i++) {
+            num = arr[i];
+
+            if(num % 2 == 0){
+                len =  arr.length;
+                arr.push(len++);
+
+            } else if(num % 2 != 0 && num != null) {
+                arr.splice(arr.indexOf(num), 1);
+            }
+
+            document.write(`${arr} </br></br>`);
+        }
     </script>
 </body>
 </html>
