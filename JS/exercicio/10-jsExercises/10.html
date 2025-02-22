@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Crie uma função que calcule o fatorial de um número. 
+    Utilize essa função para calcular o fatorial de diferentes números. -->
+
+    <h1>Factorial</h1>
+    <label for="">enter a number </label><input type="number" name="" id="strNum">
+    <button onclick="go()">go</button>
+    <p id="res"></p>
+
+    <script>
+        let res = document.querySelector('p#res');
+
+        let go = () => {
+            let obj = document.querySelector('#strNum');
+            let val = obj.value; 
+            if(isNaN(val)){
+                res.textContent = 'Enter a valid value';
+            }
+            res.textContent = fac(val);
+            obj.value = "";
+        }
+
+        let fac = (num) => {
+            for(i = num-1; i > 1; i--){
+                num *= i;
+            }
+            return num;
+        }
+    </script>
+</body>
+</html>

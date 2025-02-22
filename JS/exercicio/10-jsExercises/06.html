@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- Implemente uma função que inverta a ordem dos elementos em um array.
+    Utilize essa função para inverter a ordem de diferentes conjuntos de elementos. -->
+
+    <label for="" id="lblTxt">Enter a value: </label><input type="text" name="" id="txt" onfocus="this.values=' ';">
+    <button type="submit" onclick="next()">Next</button>
+    <button onclick="verif()">GO</button>
+    <p id="res"></p>
+
+    <script>
+        
+        let res = document.querySelector('p#res');
+        let arr = [];
+
+        let next = () => {
+            let ipt = document.querySelector('input#txt');  // input object
+            let str = ipt.value;                            // input value
+            arr.push(str);
+            ipt.value = "";  
+        }
+
+        let verif = () => {
+            let len = arr.length;
+            let popped;
+            for(i = 0; i < len; i++){
+                arr.unshift(arr.splice(i,1));        // pull to begin the element by index
+            }
+            res.textContent = arr;
+        }
+        
+    </script>
 </body>
 </html>

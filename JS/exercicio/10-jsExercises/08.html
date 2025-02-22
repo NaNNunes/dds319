@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Desenvolva uma função que verifique se uma palavra é um palíndromo 
+    (lê-se da mesma forma da esquerda para a direita e vice-versa).
+    Retorne true se for um palíndromo e false se não for. -->
+
+    <h1 id="title">Is Palidrome?</h1>
+    <label for="">Text: </label><input type="text" name="" id="strTxt">
+    <button type="submit" onclick="go()">Go</button>
+    <p id="res"></p>
+    <script>
+        let res = document.querySelector("p#res");
+        let input = document.querySelector("input#strTxt");
+
+        let go = () => {
+            let val = input.value;
+            console.log(val)
+            res.textContent = isPalindrome(val);
+        }
+
+        let isPalindrome = (txt) => {
+            let reference = txt;
+            let lastIndex = txt.length;
+            for(i = 0; i < txt.length; i++){
+                if(reference.charAt(i) != txt.charAt(--lastIndex)){
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

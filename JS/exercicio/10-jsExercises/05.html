@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- Desenvolva uma função que determine se um número é primo ou não.
+      Retorne true se for primo e false se não for. -->
+
+    <label for="" id="lblNum">Enter a number: </label><input type="number" name="" id="strNum">
+    <button onclick="verif()">GO</button>
+    <p id="res"></p>
+
+    <script>
+        let verif = () =>{
+            let val = parseInt(document.querySelector('input#strNum').value);
+            let res = document.querySelector('p#res');
+            let msg = '';
+
+            if(isNaN(val) || val < 1){
+                res.textContent = 'Informe valores válidos'
+                return;
+            }
+            res.textContent = `${isPrime(val)}`
+        } 
+
+        let isPrime = (num) => {
+            for(i = 2; i < num; i++){
+                if(num % i == 0){
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
 </body>
 </html>

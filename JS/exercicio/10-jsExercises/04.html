@@ -13,19 +13,20 @@
 
     <h1>Enter a text</h1>
     <label for="" class="lbltxt">Here:</label><input type="text" name="" id="txt">
-    <button id="submit" onclick="toUpper()">GO</button>
+    <button onclick="toUpper()">GO</button>
     <p id="toUp"></p>
 
     <script>
         let toUpper = () => {
-            let str = document.querySelector("#txt");
-            let res = document.querySelector('#toUp')
-            res.textContent = `${printer(str)}`; 
+            let txt = document.querySelector('input#txt').value;
+            let res = document.querySelector('p#toUp');
+            res.textContent = up(txt);
         }
 
-        let printer = (str) => {
-            return str.toUpperContent;
+        let up = (str) => {
+            return str.toUpperCase();
         }
+        
     </script>
 </body>
 </html>

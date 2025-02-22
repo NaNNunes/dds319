@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Implemente uma função que receba um número como parâmetro e retorne sua representação binária.
+    Utilize essa função para converter diferentes números em binário.  -->
+
+    <h1>In Binary</h1>
+    <label for="">number: </label><input type="number" name="" id="strNum">
+    <button type="submit" onclick="go()">GO</button>
+    <p id="res"></p>
+
+    <script>
+        console.log(5%2);
+        let res = document.querySelector('p#res');
+        let obj = document.querySelector('input#strNum');
+
+        let go = () => {
+            let val = obj.value;
+            if(isNaN(val)) {
+                res.textContent = "Enter a valid value";
+                return;
+            }
+            res.textContent = toBin(parseInt(val));
+        }
+
+        let toBin = (num = '') => {
+            return (num >>> 0).toString(2);
+        }
+    </script>
+</body>
+</html>

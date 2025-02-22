@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            padding: .5rem;
+
+            width: 40vw;
+            height: 10vh;
+        }
+        .content .go{
+            width: 50%;
+        }
+        #res{
+            display: inline;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Crie uma função que receba um valor e uma porcentagem como parâmetros.
+    A função deve retornar o valor acrescido da porcentagem indicada. -->
+
+    <h1 id="title">Percentage Calculator</h1>
+    <div class="content">
+        <label class="lbltxt">Number</label><input type="number" name="" id="txtNum">
+        <label class="lbltxt">Percentage</label><input type="number" name="" id="txtPerc">
+        <button type="submit" class="go" onclick="action()">Go</button>
+    </div>
+    <section class="resContent">
+        <label for="">Result: </label><p id="res">...</p>
+    </section>
+
+    <script>
+        let res = document.querySelector('p#res');
+        let action = () => {
+            // get object
+            let txtNum = document.querySelector('input#txtNum');
+            let txtPrtg = document.querySelector('input#txtPerc');
+            // get object values
+            let num = parseFloat(txtNum.value);
+            let prctg = parseFloat(txtPrtg.value);
+            // clear inputs
+            txtNum.value = "";
+            txtPrtg.value = "";
+            // check values
+            if(isNaN(num) || isNaN(prctg)){
+                res.textContent = 'enter valid values';
+                return;
+            }
+            // returning calc
+            res.textContent = calc(parseFloat(num), (parseFloat(prctg)/100));
+        }
+        // calc
+        let calc = (num, perc) => {
+            return num+(num*perc);
+        }
+
+    </script>
 </body>
 </html>
