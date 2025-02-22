@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+</head>
+<body>
+    <!-- 
+        Crie uma função que exiba uma mensagem de boas-vindas ao usuário quando a página for carregada. 
+        Utilize essa função para personalizar a experiência de cada usuário.
+    -->
+
+    <p id="msg"></p>
+    <script>
+        window.onload = function(){
+            let greeting = document.querySelector("p#msg");
+            greeting.textContent = "Hello World!";
+        }
+    </script>
+</body>
+</html>

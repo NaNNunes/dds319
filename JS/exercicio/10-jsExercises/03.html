@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aritmetical Avarage</title>
+</head>
+<body>
+    <!-- 
+        Implemente uma função que calcule a média aritmética de um array de números e retorne o resultado.
+        Utilize essa função para calcular a média de diferentes conjuntos de números.
+    -->
+
+    <p class="res"></p>
+
+    <script>
+        let arr = [];
+        let num; 
+        let number = 0;
+        let sum = 0;
+        let res = document.querySelector("p.res");
+
+        do{
+            num = prompt("Enter a number: ");
+            number = parseFloat(num);
+        
+            if(!(isNaN(number)) && num != null){
+                arr.push(number);
+                sum += number;
+            }
+        }while(num != null);
+        res.textContent = `Avarage: ${sum/arr.length}`; 
+    </script>
+</body>
+</html>

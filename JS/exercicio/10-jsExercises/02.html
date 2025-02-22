@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Desenvolva uma função que receba um número como parâmetro e verifique se ele é par ou ímpar.
+        Retorne true se for par e false se for ímpar.
+    -->
+
+    <h1>Is even?</h1>
+    <label for="" class="lblnumber">Number: </label><input type="number" name="" id="txtnum" class="">
+    <button onclick="verify()">Verify</button>
+    <p id="res">result</p>
+
+    <script>
+        let verify = () => {
+            let res = document.querySelector("p#res");
+            let val = parseInt(document.querySelector("#txtnum").value);
+            console.log(val);
+            if(isNaN(val)){
+                return res.textContent = "Insira valores válidos";
+            }
+            res.textContent = func(val);
+        }
+        
+        let func = (a) => {
+            return a % 2 == 0; 
+        }
+
+    </script>
+</body>
+</html>
