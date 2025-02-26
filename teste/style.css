@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96vw;
+    height: 98vh;
+    /* background-color: blue; */
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+
+    background-color: green;
+}
+
+body, #container{
+    background-color: #fef6e4;
+}
+
+aside{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+    width: 50%;
+    height: 60%;
+    /* background-color: aqua; */
+}
+
+img{
+    width: 100%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: black;
+}
+
+h1{
+    position: relative;
+    top: 15%;
+
+    font: bold 2rem arial;
+}
+
+main{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    /* background-color: blueviolet; */
+}
+
+form{
+    box-sizing: content-box;
+
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+label{
+    margin-top: .8rem;
+    margin-bottom: -.3rem;
+
+    font: 500 1.2rem arial;
+    align-self: start;
+    margin-left: 10%;
+}
+
+input{
+    margin: 2%;
+    padding: 1rem;
+    width: 90%;
+    height: 15%;
+    border-radius: 30px;
+    font: normal 1rem arial;
+}
+
+#loginBtn{
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    width: 90%;
+    height: 15%;
+    font: bold 1.5rem arial;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #f582ae;
+}
+
+#loginBtn:hover{
+    background-color: #f28fb5;
+    color: #234193;
+}
+
+.frgtPss{
+    font: bold 1rem arial;
+    color: #172c66;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.405);
+}
+.frgtPss, footer a:hover{
+    color: #3353aa;
+}
+
+footer{
+    position: relative;
+    top: 20%;
+    font: normal .8rem arial;
+    /* background-color: blueviolet; */
+}
+footer a{
+    font: bold .9rem arial;
+    color: #001858;
+    text-decoration: none;
+}
+
+h1, button{
+    color: #001858;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.257);
+}
+
+label{
+    color: #031c68;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.737);
+}
+
+input, img, #loginBtn{
+    box-shadow: 6px 8px 10px #f3d2c1;
+}
