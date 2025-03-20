@@ -1,0 +1,6 @@
+/* module impede que fazamento da estilização */
+.meuTitulo{
+    color: violet;
+    background-color: aquamarine;
+    font-weight: bolder;
+}
