@@ -7,10 +7,15 @@ import Imagens from './components/Imagens';
 import MeuCss from './components/MeuCss';
 import MyCss from './components/MyCss';
 
+// componentes 2
+import Vars from './componentes2/variaveis/Vars';
+import ListRender from './componentes2/listRender/ListRender';
+import listaAI from './ex02/listaAI';
+
 function App() {
   return (
     <>
-      <FirstComponent />
+      {/* <FirstComponent />
       <hr />
       <ComponenteMotivador />
       <hr />
@@ -23,7 +28,12 @@ function App() {
       <hr />
       <MeuCss/>
       <p>Escrevi no App</p>
-      <MyCss/>
+      <MyCss/> */}
+
+      {/* <Vars/>
+      <ListRender/> */}
+
+      <ListaAI/>
     </>
   )
 }
