@@ -7,7 +7,7 @@ import Login from "./pages/Login";
 import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
 import Cadastro from "./pages/Cadastro";
-
+import InfoCard from "./componentes/InfoCard";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +35,12 @@ const router = createBrowserRouter([
                 path:"/Contato",
                 element:<Contato />
             },
+            {
+                /* Nested Routes */
+                // url/":" == variavel 
+                path:"/info/:id",   
+                element: <InfoCard />
+            }
 
         ]
     },
