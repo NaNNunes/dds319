@@ -7,8 +7,7 @@ import Button from "react-bootstrap/Button";
 // Importação do hook do React Hook Form para lidar com o formulário
 import { useForm } from "react-hook-form";
 
-import { addFuncionario } from "../hooks/useApi";
-
+import {addFuncionario} from "../hooks/useApi"
 const Cadastro = () => {
   // Hook useForm para gerenciar o estado do formulário
   // register: função para registrar os campos do formulário
@@ -23,7 +22,9 @@ const Cadastro = () => {
   // Função chamada quando o formulário é enviado com sucesso
   const onSubmit = (data) => {
     console.log("Dados:", data);
-    addFuncionario(data);
+    addFuncionario(data)
+    alert("Funcionario cadastrado")
+    window.location.reload();
   };
 
   // Função chamada quando há erros no envio do formulário
@@ -103,8 +104,8 @@ const Cadastro = () => {
             {...register("senha", {
               required: "A senha é obrigatória",
               minLength: {
-                value: 8,
-                message: "A senha deve ter pelo menos 8 caracteres",
+                value: 1,
+                message: "A senha deve ter pelo menos 1 caracteres",
               },
               maxLength: {
                 value: 20,
