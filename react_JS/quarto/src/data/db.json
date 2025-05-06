@@ -50,27 +50,5 @@
       "idade": "94"
     }
   ],
-  "funcionarios": [
-    {
-        "id": "1",
-        "nome": "Jarad Anthony Higgins",
-        "idade": "21",
-        "senha": "senha123",
-        "tipo": "Administrador"
-      },
-      {
-        "id": "2",
-        "nome": "Juice WRLD",
-        "idade": "21",
-        "senha": "senha123",
-        "tipo": "Administrador"
-      },
-      {
-        "id": "3",
-        "nome": "Jarad 'Juice WRLD' Higgins",
-        "idade": "21",
-        "senha": "senha123",
-        "tipo": "Administrador"
-      }
-  ]
+  "funcionarios": []
 }

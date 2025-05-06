@@ -37,10 +37,10 @@ const NewForms = () => {
                                 },
                                 maxLength: {
                                     value: 20,
-                                    message: `O nome deve ter pelo menos ${0} caracteres`
+                                    message: "O nome deve no máximo 20 caracteres"
                                 },
                                 pattern: {
-                                    value: /^[A-Za-zç]+$/i, // apenas letras
+                                    value: /^[A-Za-zçã]+$/i, // apenas letras
                                     message: "Apenas letras por favor"
                                 }
                             })}
