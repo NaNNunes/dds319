@@ -5,8 +5,11 @@ import Nav from 'react-bootstrap/Nav';
 import { BsShop } from "react-icons/bs";
 import Button from 'react-bootstrap/Button';
 
+import { useContext } from 'react';
+import { AuthContext } from "../context/UserContext";
+
 const BarraNav = () => {
-  const usuarioNome = 'Visitante';
+  const {usuarioNome, logout} = useContext(AuthContext);
 
   return (
     <div>
@@ -43,7 +46,7 @@ const BarraNav = () => {
                   :
                     (
                       <>
-                        <Button variant='danger' href='/home'>Sair</Button>
+                        <Button variant='danger' href='/home' onClick={logout}>Sair</Button>
                       </>
                     )
               }

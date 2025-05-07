@@ -2,3 +2,12 @@
   background-color: floralwhite;
   height: 100%;
 }
+
+.error{
+  margin-top: .8%;
+  color: tomato;
+  font: normal 1.1rem arial;
+  position: absolute;
+  text-align: center;
+  width: 100%; 
+}

@@ -4,17 +4,20 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import BarraNav from "./componentes/BarraNav";
 
+import { AuthProvider } from "./context/UserContext";
+
 function App() {
 
   return (
     <>
-      <div className="App">
-        <BarraNav/>
-        <Container>
-          <Outlet/>
-        </Container>
-      </div>
-      
+      <AuthProvider>
+        <div className="App">
+          <BarraNav/>
+          <Container>
+            <Outlet/>
+          </Container>
+        </div>
+      </AuthProvider>
     </>
   )
 }

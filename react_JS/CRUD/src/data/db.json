@@ -1,1 +1,25 @@
-{}
+{
+    "usuarios":[
+        {
+            "id": 1,
+            "nome":"user",
+            "email":"user@gmail.com",
+            "senha":"senha"
+        },
+        {
+            "id": 2,
+            "nome":"user2",
+            "email":"user2@gmail.com",
+            "senha":"senha2"
+        },
+        {
+            "id": 3,
+            "nome":"user3",
+            "email":"user3@gmail.com",
+            "senha":"senha3"
+        }
+    ],
+    "produtos":[
+        
+    ]
+}
