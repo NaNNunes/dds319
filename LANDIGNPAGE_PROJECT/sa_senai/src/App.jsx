@@ -1,16 +1,18 @@
-import { useState } from 'react'
-
 import './App.css'
 
-import Home from './pages/Home'
+import Container from "react-bootstrap/Container";
+
+import BarraNav from './Componentes/navegacao/BarraNav'
+import { Outlet } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Home/>
-    </>
+    <div>
+      <BarraNav/>
+      <Container>
+        <Outlet/>
+      </Container>
+    </div>
   )
 }
 
