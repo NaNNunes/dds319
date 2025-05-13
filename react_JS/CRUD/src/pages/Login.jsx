@@ -8,8 +8,18 @@ import { useForm } from "react-hook-form"
 import { useNavigate } from "react-router-dom";
 import {useState} from "react";
 import { useVerificaLogin } from "../hooks/useApi";
+import { useContext } from "react";
+import { AuthContext } from "../context/UserContext";
+import { useEffect } from "react";
 
 const Login = () => {
+
+  const {logout} = useContext(AuthContext);
+
+  useEffect(()=>{
+    logout();
+  },[]);
+
   const {register, handleSubmit, formState: {errors}} = useForm();
   
   const {verificaLogin} = useVerificaLogin();

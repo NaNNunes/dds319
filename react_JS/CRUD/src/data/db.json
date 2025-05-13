@@ -1,25 +1,56 @@
 {
-    "usuarios":[
-        {
-            "id": 1,
-            "nome":"user",
-            "email":"user@gmail.com",
-            "senha":"senha"
-        },
-        {
-            "id": 2,
-            "nome":"user2",
-            "email":"user2@gmail.com",
-            "senha":"senha2"
-        },
-        {
-            "id": 3,
-            "nome":"user3",
-            "email":"user3@gmail.com",
-            "senha":"senha3"
-        }
-    ],
-    "produtos":[
-        
-    ]
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "user",
+      "email": "user@gmail.com",
+      "senha": "senha"
+    },
+    {
+      "id": "2",
+      "nome": "user2",
+      "email": "user2@gmail.com",
+      "senha": "senha2"
+    },
+    {
+      "id": "3",
+      "nome": "user3",
+      "email": "user3@gmail.com",
+      "senha": "senha3"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "2",
+      "nome": "Arroz",
+      "descricao": "Comida",
+      "preco": "23,99",
+      "categoria": "Alimentação",
+      "imageUrl": "https://static01.nyt.com/images/2025/02/18/multimedia/23EATrex-white-rice-clbj/23EATrex-white-rice-clbj-jumbo.jpg?quality=75&auto=webp"
+    },
+    {
+      "id": "3",
+      "nome": "Sabonete",
+      "descricao": "Uso diario",
+      "preco": "6,66",
+      "categoria": "Limpeza Corporal",
+      "imageUrl": null
+    },
+    {
+      "id": "4",
+      "nome": "Celular",
+      "descricao": "Mobile",
+      "preco": "1299,66",
+      "categoria": "Eletronicos",
+      "imageUrl": "https://img.baba-blog.com/2024/11/Galaxy-A56-renders-shows-a-new-design-and-unexpected-upgrades.jpg?x-oss-process=style%2Ffull"
+    },
+    {
+      "id": "5",
+      "nome": "Ventilador",
+      "descricao": "Uso diario",
+      "preco": "250,66",
+      "categoria": "Eletronicos",
+      "imageUrl": null
+    }
+  ]
 }
