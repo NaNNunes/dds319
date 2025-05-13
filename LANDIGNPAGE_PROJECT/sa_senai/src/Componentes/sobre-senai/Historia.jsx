@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Card, CardBody} from 'react-bootstrap'
+import { Container, Row, Col, Card} from 'react-bootstrap'
 
 import CronoIcon from "../../assets/icones/cronoicon.png"
 import SenaiVitoriaImg from "../../assets/senaivitoriaimg.png"
