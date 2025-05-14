@@ -18,8 +18,8 @@ export const AuthProvider = ({ children }) => {
     }
 
     const logout = () => {
-        localStorage.removeItem('userName', data.nome);
-        localStorage.removeItem("email", data.email);
+        localStorage.removeItem('userName');
+        localStorage.removeItem("email");
         setUsuarioNome("Visitante");
     }
 
