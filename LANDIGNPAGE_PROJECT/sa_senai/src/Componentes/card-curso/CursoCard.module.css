@@ -11,14 +11,16 @@
 
 .cardheader{
     background: linear-gradient(to right, #1F29AC, #51199E);
+    text-align: center;
+    
 }
 
 .name{
-    margin-bottom: 1rem;
+    margin: 0 0 1rem;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     font: bold 2rem arial;
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.39);
     text-decoration: none;
@@ -38,10 +40,74 @@
 
 .localidade{
     margin-top: 1rem;
-    padding: .5rem;
+    padding: .5rem 0rem;
     width: 100px;
     text-align: center;
     color: white;
+    font: bold 1rem arial;
+    background-color: #1F29AC;
+
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.185);
+}
+
+.duracao{
+    margin-top: 1rem;
+    padding: .5rem 0rem;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font: bold 1rem arial;
+    background-color: #1F29AC;
+
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.185);
+}
+
+.turno{
+    margin-top: 1rem;
+    padding: .5rem 0rem;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font: bold 1rem arial;
+    background-color: #1F29AC;
+
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.185);
+}
+
+.modalidade{
+    margin-top: 1rem;
+    padding: .5rem 0rem;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font: bold 1rem arial;
+    background-color: #1F29AC;
+
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.185);
+}
+
+.data{
+    margin-top: 1rem;
+    padding: .5rem 0rem;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font: bold 1rem arial;
+    background-color: #1F29AC;
+
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.185);
+}
+
+.valortotalcontainer{
+    margin-top: 1rem;
+    padding: .5rem 0rem;
+    width: 100px;
+    text-align: center;
     font: bold 1rem arial;
     background-color: #1F29AC;
 
@@ -55,6 +121,7 @@
     margin-right: 1rem;
     text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.055);
 }
+
 
 .total{
     color:#F2AB13;
