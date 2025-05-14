@@ -22,19 +22,21 @@ const CardDds = () => {
   return (
     <Container className={styles.container}>
        <Card className={styles.cardcontainer}>
+
             <Card.Header className={styles.cardheader}>
-                <Row className={styles.cursotitle}>
+                <Card.Title className={styles.cursotitle}>
                     <Link 
                         to={"/cursos/tecnico-dev-sistemas"} 
                         className={styles.name}
                     >
                         {curso.nome}
                     </Link>
-                </Row>
+                </Card.Title>
                 <Row 
                     className={styles.cursoimg} 
                     style={{background: `no-repeat center/100% url(${urlImg})`}}/>
             </Card.Header>
+
             <Card.Body>
                 <Row>
                     <Col xs={2}>
@@ -51,6 +53,7 @@ const CardDds = () => {
                         </Row>
                     </Col>
                 </Row>
+                
                 <Row>
                     <Col>
                         <Link to="/cursos/tecnico-dev-sistemas">

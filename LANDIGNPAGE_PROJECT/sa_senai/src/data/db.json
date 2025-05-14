@@ -1,0 +1,19 @@
+{
+    "cursos":[
+        {
+            "id":"1",
+            "nomeCurso":"Desenvolvimento de Sistemas",
+            "localidadeCurso":"Viória",
+            "valorTotalCurso":"2.994,00",
+            "valorParcelaCurso":"499,00",
+            "qtdParcelas":"6",
+            "imgUrl":"../assets/ddsimg.png"
+        }
+    ],
+    "users":[
+        {
+        
+
+        }
+    ]
+}
