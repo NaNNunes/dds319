@@ -52,5 +52,15 @@
       "categoria": "Eletronicos",
       "imageUrl": null
     }
+  ],
+  "categorias":[
+    {
+      "id":"1",
+      "nome":"Saúde"
+    },
+    {
+      "id":"2",
+      "nome":"Beleza"
+    }
   ]
 }
