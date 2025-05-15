@@ -21,7 +21,12 @@ const CardCursoDetalhado = () => {
                     </Card.Title>
                     <Row
                         className={styles.cursoimg}
-                        style={{background:`no-repeat center/100% url(${urlImg})`}}
+                        style={
+                            {
+                                background:`no-repeat center/100% url(${urlImg})`,
+                                filter:"brightness(50%)"
+                            }
+                        }
                     />
                 </Card.Header>
 
@@ -30,7 +35,7 @@ const CardCursoDetalhado = () => {
                     <Row>
                         
                         <Col xl={8} lg={10} md={7} sm={10} xs={10} 
-                         className='m-auto d-flex flex-wrap justify-content-around'>
+                         className='m-auto mb-2 d-flex flex-wrap justify-content-around'>
                             
                                 <div className={styles.localidade}>
                                     localidade
@@ -46,15 +51,14 @@ const CardCursoDetalhado = () => {
                                 </div>
                                 <div className={styles.data}>Data</div>
                                 <div className={styles.valortotalcontainer}>
-                                    R$ 2.994,00
+                                    <div style={{color:"#F2AB13"}}>R$ 2.994,00</div>
                                 </div>
-                            
                         </Col>
                                     
-                        
-                        
                         <Row>
-                            <Col className={styles.parcela}>até 6x de R$ 499,00</Col>
+                            <Col className={styles.parcela}>
+                                até 6x de R$ 499,00
+                            </Col>
                         </Row>
                     </Row>
 
