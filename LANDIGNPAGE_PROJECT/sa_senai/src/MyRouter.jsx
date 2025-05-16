@@ -4,9 +4,9 @@ import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx"
 import Sobre from "./pages/Sobre.jsx";
-import Devsys from "./pages/DevSys.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import Cadastro from "./pages/Cadastro.jsx";
+import DetalhesCurso from "./pages/DetalhesCurso.jsx";
 
 const router = createBrowserRouter([
     {
@@ -23,10 +23,6 @@ const router = createBrowserRouter([
                 element:<Home/>
             },
             {
-                path:"/cursos",
-                element:<Home/>
-            },
-            {
                 path:"cadastre-se",
                 element:<Cadastro/>
             },
@@ -39,8 +35,8 @@ const router = createBrowserRouter([
                 element:<Sobre/>
             },
             {
-                path:"/cursos/tecnico-dev-sistemas",
-                element:<Devsys/>
+                path:"/cursos/:id",
+                element:<DetalhesCurso/>
             }
         ]
     }

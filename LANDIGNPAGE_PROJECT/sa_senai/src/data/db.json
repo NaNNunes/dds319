@@ -2,12 +2,58 @@
     "cursos":[
         {
             "id":"1",
-            "nomeCurso":"Desenvolvimento de Sistemas",
-            "localidadeCurso":"Viória",
-            "valorTotalCurso":"2.994,00",
-            "valorParcelaCurso":"499,00",
+            "nome":"Desenvolvimento de Sistemas",
+            "localidade":"Viória",
+            "valorTotal":"2.994,00",
+            "valorParcela":"499,00",
             "qtdParcelas":"6",
-            "imgUrl":"../assets/ddsimg.png"
+            "imgUrl":"./src/assets/cursos/ddsimg.png",
+            "link2Detalhes":"./src/pages/"
+        },
+        {
+            "id":"2",
+            "nome":"Eletrotécnica",
+            "localidade":"Viória",
+            "valorTotal":"2.994,00",
+            "valorParcela":"499,00",
+            "qtdParcelas":"6",
+            "imgUrl":"./src/assets/cursos/eletrotecimg.png"
+        },
+        {
+            "id":"3",
+            "nome":"Eletromecânica",
+            "localidade":"Viória",
+            "valorTotal":"2.994,00",
+            "valorParcela":"499,00",
+            "qtdParcelas":"6",
+            "imgUrl":"./src/assets/cursos/eletromecimg.png"
+        },
+        {
+            "id":"4",
+            "nome":"Eletromecânica",
+            "localidade":"Viória",
+            "valorTotal":"2.994,00",
+            "valorParcela":"499,00",
+            "qtdParcelas":"6",
+            "imgUrl":"./src/assets/cursos/eletromecimg.png"
+        },
+        {
+            "id":"5",
+            "nome":"Eletromecânica",
+            "localidade":"Viória",
+            "valorTotal":"2.994,00",
+            "valorParcela":"499,00",
+            "qtdParcelas":"6",
+            "imgUrl":"./src/assets/cursos/eletromecimg.png"
+        },
+        {
+            "id":"6",
+            "nome":"Eletromecânica",
+            "localidade":"Viória",
+            "valorTotal":"2.994,00",
+            "valorParcela":"499,00",
+            "qtdParcelas":"6",
+            "imgUrl":"./src/assets/cursos/eletromecimg.png"
         }
     ],
     "users":[
