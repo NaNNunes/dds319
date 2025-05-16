@@ -84,11 +84,13 @@ const Login = () => {
                     </Col>
                   </Row>
                   <Row className='mb-3 mx-2'>
+                    <Link to='/cadastre-se'>
                       <Button
                         as='input' value='Cadastre-se' type='submit' size='lg'
                         className='w-100 p-3 text-uppercase fw-bold'
                         style={{background:'linear-gradient(to right, #FC5707 50%, #F2AB13)', border:'none'}}
                       />
+                    </Link>
                   </Row>
             </Col>
           </Row>
