@@ -53,8 +53,8 @@ const PreRequisitosConteudo = () => {
           </Row>
           <Card.Body className={cardStyle.texto}>
             <Card.Text>
-              ESTE CURSO POSSUI 80% DE CARGA HORÁRIA
-              NA MODALIDADE DE ENSINO À DISTÂNCIA
+              Este curso possui 80% de carga horária na modalidade de ensino presencial
+              e 20% para ensino a distância
             </Card.Text>
           </Card.Body>
         </Card>

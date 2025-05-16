@@ -6,21 +6,27 @@ import {Col, Row, Card, Container, ListGroup} from "react-bootstrap";
 
 import objetivoIcon from "../../assets/icones/objetivoicon.png"
 import papeladaIcon from "../../assets/icones/papeladaIcon.png"
-import ddsImg from "../../assets/ddsimg.png";
+import imgUrl from "../../assets/cursos/ddsImg.png";
 
-const CursoObjetivo = () => {
+const CursoObjetivo = (props) => {
+    const curso = {
+        nome:"DDS",
+        imgUrl:imgUrl,
+        objetivo:"O curso Técnico em Desenvolvimento de Sistemas têm como objetivos desenvolver e programar sistemas computacionais, atendendo normas e padrões de qualidade, usabilidade, integridade e segurança da informação."
+    }
+
   return (
     <Container className={containerStyle.cont}>
         <Row className={containerStyle.cursonome}>
             <Col>
-                Técnico em Desenvolvimento de Sistemas
+                {curso.nome}
             </Col>
         </Row>
         <Row
             style={
                 {
                     height:"300px",
-                    background:`no-repeat bottom/100% url(${ddsImg})`,
+                    background:`no-repeat bottom/100% url(${curso.imgUrl})`,
                     backgroundSize:"cover",
                     borderRadius:"0 0 10px 10px",
                     boxShadow:"3px 4px 5px rgba(0,0,0, .5)",
@@ -43,9 +49,7 @@ const CursoObjetivo = () => {
                     </Row>
                     <Card.Body className={cardStyle.texto}>
                         <Card.Text>
-                            O curso Técnico em Desenvolvimento de Sistemas têm como objetivos desenvolver
-                            e programar sistemas computacionais, atendendo normas e padrões de qualidade,
-                            usabilidade, integridade e segurança da informação.
+                            {curso.objetivo}
                         </Card.Text>
                     </Card.Body>
                 </Card>

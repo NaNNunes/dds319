@@ -1,5 +1,7 @@
-import styles from  "../card-curso/CursoCard.module.css";
+// stilo
+import styles from "./CursoCard.module.css";
 
+// componentes
 import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
@@ -8,55 +10,44 @@ import Button from 'react-bootstrap/Button'
 
 import { Link } from "react-router-dom";
 
-import urlImg from "../../assets/ddsimg.png";
-
-const CardDds = () => {
-
-    const curso = {
-        nome : "Técnico em Desenvolvimento de Sistemas",
-        localidade: "Vitória",
-        valorTotal: "2.994,00",
-        valorParcela: "499,00",
-    }
-
+const CursoCard = (props) => {
   return (
     <Container className={styles.container}>
-       <Card className={styles.cardcontainer}>
-
+        <Card className={styles.cardcontainer}>
             <Card.Header className={styles.cardheader}>
                 <Card.Title className={styles.cursotitle}>
                     <Link 
                         to={"/cursos/tecnico-dev-sistemas"} 
                         className={styles.name}
                     >
-                        {curso.nome}
+                        {props.nome}
                     </Link>
                 </Card.Title>
                 <Row 
                     className={styles.cursoimg} 
-                    style={{background: `no-repeat center/100% url(${urlImg})`}}/>
+                    style={{background: `no-repeat center/100% url(${props.imgUrl})`}}/>
             </Card.Header>
 
             <Card.Body>
                 <Row>
                     <Col xs={2}>
                         <div className={styles.localidade}>
-                            {curso.localidade}
+                            {props.localidade}
                         </div>
                     </Col>
                     <Col className={styles.valores}>
                         <Row className={styles.total}>
-                            <div>R$ {curso.valorTotal}</div>
+                            <div>R$ {props.valorTotal}</div>
                         </Row>
                         <Row className={styles.parcela}>
-                            <div>até 6x de R$ {curso.valorParcela}</div>
+                            <div>até {props.qtdParcelas}x de R$ {props.valorParcela}</div>
                         </Row>
                     </Col>
                 </Row>
                 
                 <Row>
                     <Col>
-                        <Link to="/cursos/tecnico-dev-sistemas">
+                        <Link to={`/cursos/${1}`}>
                             <Button
                                 as='input'
                                 value={"Matricule-se"}
@@ -68,9 +59,9 @@ const CardDds = () => {
                     </Col>
                 </Row>
             </Card.Body>
-       </Card>
+        </Card>
     </Container>
   )
 }
 
-export default CardDds
+export default CursoCard
