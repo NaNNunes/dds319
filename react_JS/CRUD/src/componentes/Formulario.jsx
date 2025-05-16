@@ -53,9 +53,9 @@ const Formulario = (props) => {
             setCarregado(true);
           }
 
-        } catch (error) {
+        } catch (erro) {
           console.log("erro ao buscar prod: ". erro)
-          if( erro.messege.includes("Unexpected")){
+          if(erro.messege.includes("Unexpected")){
             alert("Produto não encontrado")
             navigate("/home")
           }
