@@ -1,0 +1,5 @@
+front
+npm i
+
+server
+npm i nodemon express cors mysql2
